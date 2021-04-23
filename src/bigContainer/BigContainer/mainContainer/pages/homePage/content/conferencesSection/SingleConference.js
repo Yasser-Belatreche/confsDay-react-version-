@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SingleConference = ({image, title, index, desc, position, textPosition}) => {
+const SingleConference = ({image, title, index, desc, textPosition}) => {
 
   return (
-    <div className={`conference ${position}`} >
+    <div className={`conference`} >
       <div className="conference-title" style={{backgroundImage: `url(${image})`}}>
         <div className="conference-desc">
           <h1 className={textPosition}>{title}</h1>

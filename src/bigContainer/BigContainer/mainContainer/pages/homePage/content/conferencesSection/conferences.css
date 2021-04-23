@@ -8,14 +8,9 @@
     @apply font-black text-center
 }
 
-.conferences-container {
-    overflow-x: hidden;
-    height: 500px;
-}
-
 .conference {
     opacity: 1;
-    width: 70%;
+    width: 87%;
     @apply flex flex-col items-center mx-auto
 }
 
@@ -26,35 +21,13 @@
     @apply flex justify-center relative my-4 w-full
 }
 
-
-/* custumize slider component  */
-
-.carousel .slider-wrapper,
-.carousel.carousel-slider {
-    overflow: visible !important;
-}
-
-.carousel .control-dots {
-    display: none;
-}
-
-.carousel .carousel-status {
-    display: none;
-}
-
-.carousel.carousel-slider .control-arrow:hover {
-    background-color: transparent !important;
-}
-
 .conference-desc {
     border-radius: 18px;
-    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.36) 8.01%, rgba(196, 196, 196, 0.18) 100%);
+    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.5) 8.01%, rgba(196, 196, 196, 0.3) 100%);
+    text-align: left;
     bottom: -50%;
     width: 86%;
     height: 68%;
-    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.36) 8.01%, rgba(196, 196, 196, 0.18) 100%);
-    box-shadow: 7.27716px 14.5543px 72.7716px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(43.663px);
     @apply absolute px-5 py-8 font-medium
 }
 
@@ -77,4 +50,55 @@
     font-family: 'Gotham-black';
     font-size: 20px;
     @apply absolute bottom-5 right-6 font-black
+}
+
+@media (max-width: 1280px) {
+    .conferences {
+        @apply px-2
+    }
+}
+
+
+/* custumize slider  */
+
+.carousel .slider-wrapper {
+    width: 80% !important;
+    height: 500px;
+}
+
+.carousel .control-dots {
+    display: none;
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: transparent !important;
+}
+
+.carousel .control-next.control-arrow {
+    right: 26px !important;
+    bottom: 100px !important;
+}
+
+.carousel .control-prev.control-arrow {
+    left: 26px !important;
+    bottom: 100px !important;
+}
+
+.carousel.carousel-slider .control-arrow::after {
+    content: '';
+    background: #FFFFFF69;
+    right: -1px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    @apply absolute w-8 h-8
+}
+
+.carousel .control-prev.control-arrow::after {
+    right: initial !important;
+    left: -1px;
 }
