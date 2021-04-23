@@ -1,0 +1,34 @@
+import React from 'react';
+import './homeNavBar.css';
+
+const HomeNavBar = () => {
+  return (
+    <div className="navBar">
+      <ul className="home-nav-links">
+        <li className='home-link current'>
+          <a href="#hero">What's</a>
+        </li>
+        <li className='home-link'>
+          <a href="#about">About</a>
+        </li>
+        <li className='home-link'>
+          <a href="#conferences">Conferences</a>
+        </li>
+        <li className='home-link'>
+          <a href="">Agenda</a>
+        </li>
+        <li className='home-link'>
+          <a href="">Speakers</a>
+        </li>
+        <li className='home-link'>
+          <a href="">Testimonials</a>
+        </li>
+        <li className='home-link'>
+          <a href="">Sponsors</a>
+        </li>
+      </ul>
+    </div>
+  )
+}
+
+export default HomeNavBar;

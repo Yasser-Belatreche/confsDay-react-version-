@@ -1,0 +1,31 @@
+.header {
+    padding: 20px 100px;
+    width: 100%;
+    @apply flex justify-between items-center
+}
+
+.header p {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+.social-icons {
+    @apply flex
+}
+
+.icon {
+    margin-left: 50px;
+}
+
+.cseLogo {
+    width: 11%;
+    left: 50px;
+    @apply relative
+}
+
+.cseLogo img {
+    width: 100%;
+    height: auto;
+}

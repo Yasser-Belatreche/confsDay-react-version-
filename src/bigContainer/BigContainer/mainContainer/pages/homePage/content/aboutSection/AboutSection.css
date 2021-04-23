@@ -1,0 +1,53 @@
+.about {
+    color: white;
+    grid-template-rows: 1fr 3fr;
+    @apply grid grid-cols-2 gap-5 px-20 my-28;
+}
+
+.about .title {
+    @apply flex items-end
+}
+
+.about h1.title {
+    font-size: 48px;
+    @apply font-black
+}
+
+.photo {
+    height: 100%;
+    grid-row: 1 / span 2;
+    width: 100%;
+    @apply flex items-center justify-end
+}
+
+.photo img {
+    margin-right: 20px;
+    width: 90%;
+}
+
+.club-info {
+    text-align: justify;
+    line-height: 140%;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+@media (max-width: 1280px) {
+    .about {
+        @apply block
+    }
+    .about .title {
+        @apply justify-center
+    }
+    .photo {
+        @apply justify-center
+    }
+    .photo img {
+        width: 70%;
+        @apply my-10
+    }
+    .club-info {
+        line-height: 30px;
+        text-align: center;
+    }
+}

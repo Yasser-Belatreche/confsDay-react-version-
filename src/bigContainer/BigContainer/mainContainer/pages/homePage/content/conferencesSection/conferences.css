@@ -1,0 +1,80 @@
+.conferences {
+    color: white;
+    @apply px-20
+}
+
+.conferences h1.title {
+    font-size: 48px;
+    @apply font-black text-center
+}
+
+.conferences-container {
+    overflow-x: hidden;
+    height: 500px;
+}
+
+.conference {
+    opacity: 1;
+    width: 70%;
+    @apply flex flex-col items-center mx-auto
+}
+
+.conference-title {
+    background-position: center center;
+    height: 320px;
+    border-radius: 18px;
+    @apply flex justify-center relative my-4 w-full
+}
+
+
+/* custumize slider component  */
+
+.carousel .slider-wrapper,
+.carousel.carousel-slider {
+    overflow: visible !important;
+}
+
+.carousel .control-dots {
+    display: none;
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+    background-color: transparent !important;
+}
+
+.conference-desc {
+    border-radius: 18px;
+    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.36) 8.01%, rgba(196, 196, 196, 0.18) 100%);
+    bottom: -50%;
+    width: 86%;
+    height: 68%;
+    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.36) 8.01%, rgba(196, 196, 196, 0.18) 100%);
+    box-shadow: 7.27716px 14.5543px 72.7716px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(43.663px);
+    @apply absolute px-5 py-8 font-medium
+}
+
+.conference-desc h1 {
+    font-size: 22.5px;
+    margin-bottom: 20px;
+    font-family: 'Gotham-black';
+    line-height: 25px;
+    @apply font-black mx-auto w-full
+}
+
+.conference-desc p {
+    font-size: 17px;
+    line-height: 17px;
+    color: rgba(255, 255, 255, 0.82);
+    @apply px-2
+}
+
+.conference-desc p.conference-num {
+    font-family: 'Gotham-black';
+    font-size: 20px;
+    @apply absolute bottom-5 right-6 font-black
+}

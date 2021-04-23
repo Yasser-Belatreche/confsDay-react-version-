@@ -1,0 +1,9 @@
+.footer {
+    @apply absolute text-center bottom-2 w-full
+}
+
+.footer p {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}

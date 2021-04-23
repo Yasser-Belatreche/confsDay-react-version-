@@ -1,0 +1,24 @@
+.logoContainer {
+    top: 200px;
+    @apply absolute flex justify-center items-center w-full
+}
+
+.octagon {
+    @apply absolute bottom-3 right-40
+}
+
+.bigCircle {
+    @apply absolute right-20
+}
+
+.smallCircle {
+    z-index: 2;
+    @apply absolute bottom-14 left-28
+}
+
+@media (min-width: 1280px) {
+    .smallCircle {
+        width: 150px;
+        height: 150px;
+    }
+}

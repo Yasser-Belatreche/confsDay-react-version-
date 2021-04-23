@@ -1,0 +1,55 @@
+.hero {
+    color: white;
+    @apply flex flex-col items-center px-44
+}
+
+.hero .title {
+    font-size: 40px;
+    @apply text-center font-black mt-10
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 500;
+    @apply text-center my-6 mb-10
+}
+
+.date,
+.place {
+    font-size: 18px;
+    @apply flex my-5 items-center
+}
+
+.date img,
+.place img {
+    @apply mx-2
+}
+
+.arrow {
+    height: 50px;
+    animation: arrowAnimation 0.5s linear infinite alternate-reverse;
+}
+
+@keyframes arrowAnimation {
+    0% {
+        @apply pt-8
+    }
+    50% {
+        @apply pt-10
+    }
+    100% {
+        @apply pt-12
+    }
+}
+
+@media (max-width: 1536px) {
+    .hero {
+        @apply px-20
+    }
+    .hero .title {
+        @apply mt-4
+    }
+    .desc {
+        @apply my-4
+    }
+}

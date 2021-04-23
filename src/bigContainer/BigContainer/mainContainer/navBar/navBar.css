@@ -1,0 +1,54 @@
+.navBar {
+    height: 70px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+    @apply flex justify-between items-center w-full px-14
+}
+
+.navBar .title {
+    font-size: 18px;
+    @apply font-black uppercase
+}
+
+.navLinks {
+    height: 100%;
+    @apply relative left-8 flex top-0.5
+}
+
+.link {
+    height: 100%;
+    color: #999999;
+    font-size: 18px;
+    transition: all ease 0.1s;
+    @apply flex items-center px-4
+}
+
+.link:hover {
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: 500;
+}
+
+.link.current {
+    color: white;
+    border-bottom: 2px solid white;
+    font-weight: 500;
+}
+
+.dots {
+    @apply flex
+}
+
+.dot {
+    @apply mx-3
+}
+
+@media (max-width: 1280px) {
+    .navBar {
+        @apply px-8
+    }
+    .link {
+        @apply px-2
+    }
+}
