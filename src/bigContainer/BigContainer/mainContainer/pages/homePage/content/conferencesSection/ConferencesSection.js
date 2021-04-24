@@ -26,7 +26,7 @@ const ConferencesSection = () => {
       </div>
 
       <div className="conferences-container">
-        <Carousel  emulateTouch='true' infiniteLoop='true'>
+        <Carousel  emulateTouch={true} infiniteLoop={true} showThumbs={false}>
           {
             data.map((conference, key) => {
               let position = "next";

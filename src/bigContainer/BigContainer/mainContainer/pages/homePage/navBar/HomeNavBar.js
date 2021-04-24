@@ -15,7 +15,7 @@ const HomeNavBar = () => {
           <a href="#conferences">Conferences</a>
         </li>
         <li className='home-link'>
-          <a href="">Agenda</a>
+          <a href="#agenda">Agenda</a>
         </li>
         <li className='home-link'>
           <a href="">Speakers</a>
