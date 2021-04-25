@@ -1,0 +1,86 @@
+.speakers {
+    color: white;
+}
+
+.speakers h1.title {
+    font-size: 48px;
+    @apply font-black text-center mb-10
+}
+
+.speakers .speakers-container {
+    @apply mx-20
+}
+
+@media (max-width: 1450px) {
+    .speakers .speakers-container {
+        @apply mx-2
+    }
+}
+
+@media (max-width: 1250px) {
+    .speakers .speakers-container {
+        @apply mx-12
+    }
+}
+
+.speakers .single-speaker {
+    height: 360px;
+    width: 270px;
+    background-color: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    @apply flex flex-col items-center justify-start px-3 mx-5
+}
+
+.speakers .single-speaker .img {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    z-index: 1;
+    border: 10px solid rgba(0, 0, 0, 0.25);
+    @apply my-8 mt-5 flex items-center justify-center
+}
+
+.speakers .single-speaker .img img {
+    z-index: -1;
+    @apply h-full w-full
+}
+
+.speakers .single-speaker .speaker-name {
+    font-size: 18px;
+    @apply font-extrabold tracking-widest mb-3 text-center
+}
+
+.speakers .single-speaker .speaker-desc {
+    font-size: 14px;
+    @apply tracking-widest text-center
+}
+
+.speakers .single-speaker .img,
+.speakers .single-speaker .speaker-name,
+.speakers .single-speaker .speaker-desc {
+    transition: all 0.5s ease;
+    opacity: .5;
+}
+
+.speakers .single-speaker:hover .img,
+.speakers .single-speaker:hover .speaker-name,
+.speakers .single-speaker:hover .speaker-desc {
+    opacity: 1;
+}
+
+
+/* slider customization */
+
+.slick-prev,
+.slick-next {
+    width: 30px !important;
+    height: 30px !important;
+}
+
+.slick-prev::before,
+.slick-next::before {
+    font-size: 30px !important;
+    color: #ffffff73 !important;
+}
