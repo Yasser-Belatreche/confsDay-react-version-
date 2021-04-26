@@ -13,7 +13,7 @@ const ConferencesSection = () => {
       </div>
 
       <div className="conferences-container">
-        <Carousel  emulateTouch={true} infiniteLoop={true} autoPlay={true} showThumbs={false}>
+        <Carousel stopOnHover={true}  emulateTouch={true} infiniteLoop={true} autoPlay={true} showThumbs={false}>
           {
             data.map((conference, key) => {   
               let textPosition = `${conference.title.includes('Conf') ? "text-center" : ""}`;

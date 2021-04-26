@@ -4,6 +4,7 @@ import About from './aboutSection/AboutSection';
 import Conferences from './conferencesSection/ConferencesSection';
 import Agenda from './agendaSection/AgendaSection';
 import Speakers from './speakersSection/SpeakersSection';
+import Testimonials from './testimonialsSection/TestimonialsSection';
 import './Content.css'
 const Content = () => {
   return (
@@ -13,6 +14,7 @@ const Content = () => {
       <Conferences/>
       <Agenda/>
       <Speakers/>
+      <Testimonials/>
     </div>
   )
 }

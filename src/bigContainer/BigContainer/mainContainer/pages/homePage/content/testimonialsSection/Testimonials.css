@@ -1,0 +1,108 @@
+.testimonials {
+    color: white;
+    @apply relative
+}
+
+.testimonials h1.title {
+    font-size: 48px;
+    @apply font-black text-center mb-10
+}
+
+.testimonials .testimonials-container {
+    @apply mx-20 relative
+}
+
+@media (max-width: 1450px) {
+    .testimonials .testimonials-container {
+        @apply mx-2
+    }
+}
+
+.testimonials .single-testimonial {
+    height: 342px;
+    width: 700px;
+    border-radius: 15px;
+    @apply flex mx-auto relative;
+}
+
+.single-testimonial .text-container {
+    background: radial-gradient(98.77% 221.99% at 1.23% 2.6%, rgba(255, 255, 255, 0.6) 8.01%, rgba(196, 196, 196, 0.3) 100%);
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    backdrop-filter: blur(42.9446px);
+    width: 60%;
+    @apply p-7 pt-10 relative
+}
+
+.single-testimonial .text-container .author {
+    font-family: 'Gotham-black';
+    font-size: 18px;
+    @apply absolute bottom-5 right-10 font-black
+}
+
+.single-testimonial .text-container p {
+    font-size: 13.5px;
+    font-weight: 500;
+    line-height: 24px;
+    @apply pt-5 text-justify
+}
+
+.single-testimonial .image {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow: hidden;
+    width: 40%;
+}
+
+.single-testimonial .image img#testimonial-img {
+    width: 100% !important;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonials .shapes img {
+    @apply absolute
+}
+
+.testimonials .shapes img.topCircle {
+    margin-left: 480px;
+    top: -30px;
+    z-index: 2;
+}
+
+.testimonials .shapes img.leftCircle {
+    left: 100px;
+    top: -50px;
+}
+
+.testimonials .shapes img.bottomCircle {
+    bottom: 0;
+    margin-left: 400px;
+    z-index: -1;
+}
+
+
+/* carousel */
+
+.testimonials .carousel .slide img {
+    width: unset !important;
+    vertical-align: unset !important;
+}
+
+.testimonials .carousel img {
+    width: auto !important;
+    display: block !important;
+}
+
+.testimonials .carousel .slider-wrapper {
+    height: 400px !important;
+}
+
+@media (max-width: 1280px) {
+    .testimonials .carousel .slider-wrapper {
+        width: 100% !important;
+    }
+    .testimonials .carousel.carousel-slider .control-arrow {
+        display: none;
+    }
+}

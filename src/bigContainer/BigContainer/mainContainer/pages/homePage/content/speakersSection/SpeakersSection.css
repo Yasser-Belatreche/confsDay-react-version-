@@ -1,5 +1,6 @@
 .speakers {
     color: white;
+    @apply mb-10
 }
 
 .speakers h1.title {
@@ -8,10 +9,10 @@
 }
 
 .speakers .speakers-container {
-    @apply mx-20
+    @apply mx-28
 }
 
-@media (max-width: 1450px) {
+@media (max-width: 1500px) {
     .speakers .speakers-container {
         @apply mx-2
     }
@@ -29,7 +30,7 @@
     background-color: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
     border-radius: 15px;
-    @apply flex flex-col items-center justify-start px-3 mx-5
+    @apply flex flex-col items-center justify-start px-3 ml-3
 }
 
 .speakers .single-speaker .img {
@@ -83,4 +84,12 @@
 .slick-next::before {
     font-size: 30px !important;
     color: #ffffff73 !important;
+}
+
+.slick-next::before {
+    right: 0 !important;
+}
+
+.slick-prev::before {
+    left: 0 !important;
 }
