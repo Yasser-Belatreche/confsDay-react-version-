@@ -2,8 +2,10 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import Home from './homePage/HomePage';
 import FAQ from './FAQpage/FaqPage';
+import LastEdition from './lastEditionPage/LastEditionPage';
 
 const Pages = () => {
+  console.log(window.location.href);
   return (
     <Switch>
       <Route exact path='/'>
@@ -13,7 +15,7 @@ const Pages = () => {
         <FAQ/>
       </Route>
       <Route path='/LastEdition'>
-        <p>last edition</p>
+        <LastEdition/>
       </Route>
       <Route path='/Registration'>
         <p>registration</p>

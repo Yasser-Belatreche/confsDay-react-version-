@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React from 'react';
 import Hero from './heroSection/HeroSection';
 import About from './aboutSection/AboutSection';
 import Conferences from './conferencesSection/ConferencesSection';
@@ -10,10 +10,6 @@ import './Content.css'
 
 
 const Content = () => {
-  const [scroll, setScrollTop] = useState(0);
-  const container = useRef(null);
-  
-   
 
   return (
     <div className="home-content">

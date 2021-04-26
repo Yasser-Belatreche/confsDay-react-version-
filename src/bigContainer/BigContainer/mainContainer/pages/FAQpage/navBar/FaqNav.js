@@ -5,7 +5,7 @@ const FaqNav = () => {
     <div className="navBar">
       <ul className="home-nav-links">
         <li className='home-link current'>
-          <a href="#hero">Frequently Asked Questions</a>
+          <a href="#FAQ">Frequently Asked Questions</a>
         </li>
       </ul>
     </div>

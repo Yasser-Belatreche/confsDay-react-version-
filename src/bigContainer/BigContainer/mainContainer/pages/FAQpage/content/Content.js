@@ -7,7 +7,7 @@ import {data} from './Questions/data';
 const Content = () => {
   return (
     <div className="home-content">
-      <div className="faq">
+      <div className="faq" id="FAQ">
         <div className="title">
           <h1 className="title">FAQ</h1>
         </div>
