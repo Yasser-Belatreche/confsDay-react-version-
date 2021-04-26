@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import Home from './homePage/HomePage'
+import Home from './homePage/HomePage';
+import FAQ from './FAQpage/FaqPage';
 
 const Pages = () => {
   return (
@@ -9,7 +10,7 @@ const Pages = () => {
         <Home/>
       </Route>
       <Route path='/FAQ'>
-        <p>faq</p>
+        <FAQ/>
       </Route>
       <Route path='/LastEdition'>
         <p>last edition</p>

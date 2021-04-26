@@ -7,7 +7,7 @@
     @apply font-black text-center mt-8
 }
 
-.agenda .single-day {
+.single-day {
     background: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(40px);
     border-radius: 27px;
@@ -15,47 +15,47 @@
     @apply mx-auto w-4/5 mb-20
 }
 
-.agenda .single-day .date {
+.single-day .date {
     margin-top: 20px;
     margin-bottom: 0;
 }
 
-.agenda .single-day .date p {
+.single-day .date p {
     font-size: 24px;
     @apply text-center font-bold mx-auto
 }
 
-.agenda .single-topic {
+.single-topic {
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
     @apply px-20
 }
 
-.agenda .single-topic.last {
+.single-topic.last {
     border: none;
 }
 
 @media (max-width: 1500px) {
-    .agenda .single-topic {
+    .single-topic {
         @apply px-10
     }
 }
 
 @media (max-width: 1200px) {
-    .agenda .single-topic {
+    .single-topic {
         @apply px-2
     }
-    .agenda .single-day {
+    .single-day {
         width: 90%;
     }
 }
 
-.agenda .agenda-items .topic-header {
+.agenda-items .topic-header {
     @apply w-full flex items-center justify-between py-10
 }
 
-.agenda .topic-title,
-.agenda .topic-info,
-.agenda .topic-info .icons {
+.topic-title,
+.topic-info,
+.topic-info .icons {
     @apply flex items-center
 }
 
@@ -77,14 +77,14 @@
     width: auto;
 }
 
-.agenda .topic-title p,
-.agenda .topic-info p {
+.topic-title p,
+.topic-info p {
     font-size: 18px;
     font-weight: 800;
     @apply mx-10
 }
 
-.agenda .topic-info p {
+.topic-info p {
     font-weight: 500;
     @apply mx-0
 }

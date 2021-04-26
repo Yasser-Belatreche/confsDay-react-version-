@@ -1,0 +1,17 @@
+.faq {
+    color: white;
+}
+
+.faq h1.title {
+    font-size: 48px;
+    @apply font-black text-center my-8
+}
+
+.faq .agenda-items .topic-header {
+    @apply py-12
+}
+
+.faq .topic-title p,
+.faq .topic-info p {
+    @apply ml-0
+}
