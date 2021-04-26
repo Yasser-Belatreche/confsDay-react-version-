@@ -1,0 +1,16 @@
+.sponsors {
+    color: white;
+}
+
+.sponsors h1.title {
+    font-size: 48px;
+    @apply font-black text-center mb-10 mt-8
+}
+
+.sponsors .sponsors-container {
+    @apply flex justify-around flex-wrap
+}
+
+.sponsors .sponsors-container .sponsor-logo {
+    @apply m-8 mt-0
+}

@@ -5,7 +5,7 @@ const HomeNavBar = () => {
   return (
     <div className="navBar">
       <ul className="home-nav-links">
-        <li className='home-link current'>
+        <li className='home-link'>
           <a href="#hero">What's</a>
         </li>
         <li className='home-link'>
@@ -24,7 +24,7 @@ const HomeNavBar = () => {
           <a href="#testimonials">Testimonials</a>
         </li>
         <li className='home-link'>
-          <a href="">Sponsors</a>
+          <a href="#sponsors">Sponsors</a>
         </li>
       </ul>
     </div>

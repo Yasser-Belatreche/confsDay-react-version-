@@ -4,7 +4,7 @@
 
 .agenda h1.title {
     font-size: 48px;
-    @apply font-black text-center
+    @apply font-black text-center mt-8
 }
 
 .agenda .single-day {

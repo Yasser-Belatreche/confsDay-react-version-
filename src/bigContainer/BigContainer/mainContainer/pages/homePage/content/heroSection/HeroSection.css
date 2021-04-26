@@ -1,6 +1,6 @@
 .hero {
     color: white;
-    @apply flex flex-col items-center px-44
+    @apply flex flex-col items-center px-44 mb-8
 }
 
 .hero .title {
