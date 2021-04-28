@@ -75,7 +75,7 @@
 
 @media (max-height: 700px) {
     .hero {
-        @apply pt-5
+        @apply pt-0
     }
     .hero .date,
     .hero .place {

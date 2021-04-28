@@ -109,12 +109,20 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .speakers .speakers-container {
         @apply mx-0
     }
+}
+
+@media (max-width: 400px) {
     .speakers .single-speaker {
-        height: 360px;
         width: 220px;
+    }
+}
+
+@media (max-width: 350px) {
+    .speakers .single-speaker {
+        width: 200px;
     }
 }
