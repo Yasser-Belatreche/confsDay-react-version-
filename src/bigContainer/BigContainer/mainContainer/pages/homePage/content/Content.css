@@ -1,5 +1,5 @@
 .home-content {
-    height: 490px;
+    height: 60vh;
     overflow-y: scroll;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -44,25 +44,25 @@
     }
 }
 
-@media (max-height: 800px) {
+@media (max-height: 800px) and (max-width: 1024px) {
     .home-content {
         height: 78vh;
     }
 }
 
-@media (max-height: 750px) {
+@media (max-height: 750px) and (max-width: 1024px) {
     .home-content {
         height: 76vh;
     }
 }
 
-@media (max-height: 700px) {
+@media (max-height: 700px) and (max-width: 1024px) {
     .home-content {
         height: 70vh;
     }
 }
 
-@media (max-height: 650px) {
+@media (max-height: 650px) and (max-width: 1024px) {
     .home-content {
         height: 67vh;
     }
