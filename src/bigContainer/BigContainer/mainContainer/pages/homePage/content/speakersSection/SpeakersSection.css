@@ -12,30 +12,6 @@
     @apply mx-28
 }
 
-@media (max-width: 1500px) {
-    .speakers .speakers-container {
-        @apply mx-2
-    }
-}
-
-@media (max-width: 1250px) {
-    .speakers .speakers-container {
-        @apply mx-12
-    }
-}
-
-@media (max-width: 770px) {
-    .speakers .speakers-container {
-        @apply mx-10
-    }
-}
-
-@media (max-width: 500px) {
-    .speakers .speakers-container {
-        @apply mx-6
-    }
-}
-
 .speakers .single-speaker {
     height: 360px;
     width: 270px;
@@ -104,4 +80,41 @@
 
 .slick-prev::before {
     left: 0 !important;
+}
+
+
+/* responsiveness */
+
+@media (max-width: 1500px) {
+    .speakers .speakers-container {
+        @apply mx-2
+    }
+}
+
+@media (max-width: 1250px) {
+    .speakers .speakers-container {
+        @apply mx-12
+    }
+}
+
+@media (max-width: 770px) {
+    .speakers .speakers-container {
+        @apply mx-10
+    }
+}
+
+@media (max-width: 500px) {
+    .speakers .speakers-container {
+        @apply mx-6
+    }
+}
+
+@media (max-width: 400px) {
+    .speakers .speakers-container {
+        @apply mx-0
+    }
+    .speakers .single-speaker {
+        height: 360px;
+        width: 220px;
+    }
 }
