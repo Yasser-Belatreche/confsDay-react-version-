@@ -55,7 +55,7 @@
     background-color: white;
     width: 33px;
     height: 2px;
-    transition: all 0.5s ease;
+    transition: transform 0.5s ease;
     @apply my-2
 }
 
@@ -69,8 +69,8 @@
 }
 
 .bars.active .bar.bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
+    transform: rotate(136deg);
+    transform-origin: 50% -230%;
 }
 
 .nav-toggle {
