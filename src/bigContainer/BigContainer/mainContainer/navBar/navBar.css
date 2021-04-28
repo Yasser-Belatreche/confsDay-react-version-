@@ -6,21 +6,6 @@
     @apply flex justify-between items-center w-full px-14
 }
 
-@media (max-width: 1280px) {
-    .navBar {
-        @apply px-8
-    }
-    .link {
-        @apply px-2
-    }
-}
-
-@media (max-width: 700px) {
-    .navBar {
-        @apply px-0
-    }
-}
-
 .navBar .title {
     font-size: 18px;
     @apply font-black uppercase
@@ -57,4 +42,93 @@
 
 .dot {
     @apply mx-3
+}
+
+.bars {
+    display: none;
+    position: relative;
+    z-index: 5;
+    @apply cursor-pointer
+}
+
+.bars .bar {
+    background-color: white;
+    width: 33px;
+    height: 2px;
+    transition: all 0.5s ease;
+    @apply my-2
+}
+
+.bars.active .bar.top-bar {
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.bars.active .bar.middle-bar {
+    opacity: 0;
+}
+
+.bars.active .bar.bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
+}
+
+.nav-toggle {
+    opacity: 0;
+    background-color: #1B2927;
+    overflow: hidden;
+    z-index: 4;
+    transition: all 0.5s ease;
+    @apply flex items-center justify-center absolute w-full h-full top-0 left-full
+}
+
+.nav-toggle .navLinks {
+    height: auto;
+    display: initial;
+    position: static;
+    @apply flex-col
+}
+
+.nav-toggle .navLinks .link {
+    justify-content: center;
+    height: 70px;
+    font-size: 22px;
+}
+
+.nav-toggle .navLinks .link:hover {
+    border: none;
+}
+
+
+/* responsive */
+
+@media (max-width: 1280px) {
+    .navBar {
+        @apply px-8
+    }
+    .link {
+        @apply px-2
+    }
+}
+
+@media (max-width: 700px) {
+    .navBar {
+        @apply px-0
+    }
+    .main.navBar {
+        @apply px-10
+    }
+    .dots {
+        display: none;
+    }
+    .navLinks {
+        display: none;
+    }
+    .nav-toggle.active {
+        opacity: 1;
+        left: 0;
+    }
+    .bars {
+        display: initial;
+    }
 }

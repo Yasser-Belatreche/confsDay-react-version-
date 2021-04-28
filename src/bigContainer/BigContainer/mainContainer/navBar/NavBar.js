@@ -7,9 +7,10 @@ import RedDot from '../../../../images/reddot.png';
 
 const NavBar = () => {
   const [current, setCurrent] = useState('home');
+  const [isNavBarOpen, setIsNavBarOpen] = useState(false);
 
   return (
-    <nav className="navBar">
+    <nav className="main navBar">
       <p className="title">confsday</p>
 
       <ul className="navLinks">
@@ -23,6 +24,28 @@ const NavBar = () => {
           <Link to='/LastEdition' onClick={() => setCurrent('lastEdition')}>Last Edition</Link>
         </li>
       </ul>
+
+      {/* responsive nav bar  */}
+      <div className={`bars ${isNavBarOpen ? 'active' : '' }`} onClick={() => setIsNavBarOpen(!isNavBarOpen)}>
+        <div className="bar top-bar"></div>
+        <div className="bar middle-bar" ></div>
+        <div className="bar bottom-bar"></div>
+      </div>
+
+      <div className={`nav-toggle ${isNavBarOpen ? 'active' : '' }`}>
+        <ul className="navLinks">
+          <li className="link" onClick={() => setIsNavBarOpen(false)}>
+            <Link to='/'>Home</Link>
+          </li>
+          <li className="link"  onClick={() => setIsNavBarOpen(false)}>
+            <Link to='/FAQ'>FAQ</Link>
+          </li>
+          <li className="link" onClick={() => setIsNavBarOpen(false)}>
+            <Link to='/LastEdition'>Last Edition</Link>
+          </li>
+        </ul>
+      </div>
+      {/* end responsive nav bar */}
 
       <div className="dots">
         <div className="dot">
