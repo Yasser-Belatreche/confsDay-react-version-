@@ -27,7 +27,7 @@ const HeroSection = () => {
 
       </div>
       <div className="arrow">
-        <a href="#about">
+        <a href="#gallery">
           <img src={arrowImg} alt="arrow" width='17px'/>  
         </a>
       </div>
