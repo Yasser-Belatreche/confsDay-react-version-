@@ -121,10 +121,9 @@
     .single-testimonial .text-container {
         border-radius: 15px;
         width: 100%;
-    }
-    .single-testimonial .text-container {
         height: 100%;
     }
+    .single-testimonial .text-container {}
     .single-testimonial .text-container p {
         font-size: 16px;
     }
@@ -160,5 +159,11 @@
 @media (max-width: 500px) {
     .testimonials .single-testimonial {
         width: 95%;
+    }
+    .testimonials .carousel .slider-wrapper {
+        height: 700px !important;
+    }
+    .single-testimonial .text-container {
+        height: 110%;
     }
 }
