@@ -5,12 +5,6 @@
     scroll-behavior: smooth;
 }
 
-@media (max-width: 1024px) {
-    .home-content {
-        height: 600px;
-    }
-}
-
 
 /* width */
 
@@ -39,4 +33,13 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* responsiveness */
+
+@media (max-width: 1024px) {
+    .home-content {
+        height: 78vh;
+    }
 }

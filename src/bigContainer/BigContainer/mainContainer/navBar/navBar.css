@@ -77,9 +77,9 @@
     opacity: 0;
     background-color: #1B2927;
     overflow: hidden;
-    z-index: 4;
+    z-index: -4;
     transition: all 0.5s ease;
-    @apply flex items-center justify-center absolute w-full h-full top-0 left-full
+    @apply flex items-center justify-center absolute w-full h-full top-0 left-0
 }
 
 .nav-toggle .navLinks {
@@ -126,7 +126,7 @@
     }
     .nav-toggle.active {
         opacity: 1;
-        left: 0;
+        z-index: 4;
     }
     .bars {
         display: initial;
