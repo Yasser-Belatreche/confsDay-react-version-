@@ -2,7 +2,7 @@ import React from 'react';
 
 const LastEditionNav = () => {
   return (
-    <div className="navBar">
+    <div className="navBar faq">
       <ul className="home-nav-links">
         <li className='home-link'>
           <a href="#Hero">What's</a>
