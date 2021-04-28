@@ -1,5 +1,5 @@
 import React from 'react';
-import SingleQuestion from './SingleQuestion';
+import SingleQuestion from './Questions/SingleQuestion';
 
 const Questions = ({questions}) => {
   return (

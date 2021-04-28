@@ -1,6 +1,6 @@
 import React from 'react';
 import './content.css';
-import Questions from './Questions/Questions';
+import Questions from './Questions';
 import {data} from './Questions/data';
 
 
