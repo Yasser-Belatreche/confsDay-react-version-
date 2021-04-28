@@ -33,3 +33,9 @@ body {
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+@media (max-width: 500px) {
+    h1.title {
+        font-size: 40px !important;
+    }
+}

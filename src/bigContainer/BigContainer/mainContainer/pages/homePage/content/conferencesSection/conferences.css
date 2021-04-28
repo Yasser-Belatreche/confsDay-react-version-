@@ -1,6 +1,6 @@
 .conferences {
     color: white;
-    @apply px-20
+    @apply px-20 mx-auto
 }
 
 .conferences h1.title {
@@ -10,12 +10,13 @@
 
 .conference {
     opacity: 1;
-    width: 87%;
+    width: 85%;
     @apply flex flex-col items-center mx-auto
 }
 
 .conference-title {
     background-position: center center;
+    background-size: cover;
     height: 320px;
     border-radius: 18px;
     @apply flex justify-center relative my-4 w-full
@@ -58,12 +59,18 @@
     }
 }
 
+@media (max-width: 800px) {
+    .conferences {
+        @apply px-0
+    }
+}
+
 
 /* custumize slider  */
 
 .carousel .slider-wrapper {
     width: 80% !important;
-    height: 500px;
+    height: 520px;
 }
 
 .carousel .control-dots {
@@ -101,4 +108,38 @@
 .carousel .control-prev.control-arrow::after {
     right: initial !important;
     left: -1px;
+}
+
+@media (max-width: 700px) {
+    .conferences {
+        width: 100%;
+    }
+    .carousel.carousel-slider .control-arrow {
+        display: none;
+    }
+    .carousel .slider-wrapper {
+        width: initial !important;
+    }
+    .conference {
+        width: 95%;
+    }
+}
+
+@media (max-width: 500px) {
+    .conference-desc {
+        bottom: -55%;
+        height: 72%;
+        @apply pl-4 py-4
+    }
+    .conference-desc h1 {
+        font-size: 20px;
+        margin-bottom: 14px;
+    }
+    .conference-desc p {
+        font-size: 17px;
+        line-height: 17px;
+    }
+    .conference-desc p.conference-num {
+        @apply bottom-3 right-3
+    }
 }

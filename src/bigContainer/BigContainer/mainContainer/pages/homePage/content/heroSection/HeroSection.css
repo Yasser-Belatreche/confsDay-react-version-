@@ -3,9 +3,34 @@
     @apply flex flex-col items-center px-44 mb-8
 }
 
+@media (max-width: 1536px) {
+    .hero {
+        @apply px-20
+    }
+    .hero .title {
+        @apply mt-4
+    }
+    .desc {
+        @apply my-4
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        @apply py-20
+    }
+}
+
+@media (max-width: 500px) {
+    .hero {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+}
+
 .hero .title {
     font-size: 40px;
-    @apply text-center font-black mt-10
+    @apply text-center font-black mt-7
 }
 
 .desc {
@@ -39,17 +64,5 @@
     }
     100% {
         @apply pt-12
-    }
-}
-
-@media (max-width: 1536px) {
-    .hero {
-        @apply px-20
-    }
-    .hero .title {
-        @apply mt-4
-    }
-    .desc {
-        @apply my-4
     }
 }

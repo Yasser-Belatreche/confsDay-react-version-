@@ -6,6 +6,21 @@
     @apply flex justify-between items-center w-full px-14
 }
 
+@media (max-width: 1280px) {
+    .navBar {
+        @apply px-8
+    }
+    .link {
+        @apply px-2
+    }
+}
+
+@media (max-width: 700px) {
+    .navBar {
+        @apply px-0
+    }
+}
+
 .navBar .title {
     font-size: 18px;
     @apply font-black uppercase
@@ -42,13 +57,4 @@
 
 .dot {
     @apply mx-3
-}
-
-@media (max-width: 1280px) {
-    .navBar {
-        @apply px-8
-    }
-    .link {
-        @apply px-2
-    }
 }

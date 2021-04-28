@@ -24,7 +24,7 @@ const SingleTopic = ({img, title, time, details, imgClass, last}) => {
           </div>
 
           <div className="icons">
-            <div className="icon">
+            <div className="icon location">
               <MdLocationOn/>
             </div>
             <div className="icon" onClick={() => setIsItemOpen(!isItemOpen)}>
@@ -47,6 +47,9 @@ const SingleTopic = ({img, title, time, details, imgClass, last}) => {
             })
           }
         </ul>
+        <div className="topic-time">
+          <p><span>Time :</span> {time}</p>
+        </div>
       </div>
     </div>
   )

@@ -5,10 +5,17 @@
     scroll-behavior: smooth;
 }
 
+@media (max-width: 1024px) {
+    .home-content {
+        height: 600px;
+    }
+}
+
 
 /* width */
 
 ::-webkit-scrollbar {
+    height: 0px;
     width: 7px;
 }
 

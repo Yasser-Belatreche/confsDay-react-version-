@@ -5,7 +5,6 @@ import FAQ from './FAQpage/FaqPage';
 import LastEdition from './lastEditionPage/LastEditionPage';
 
 const Pages = () => {
-  console.log(window.location.href);
   return (
     <Switch>
       <Route exact path='/'>

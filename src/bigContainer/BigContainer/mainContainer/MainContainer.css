@@ -20,3 +20,14 @@
     z-index: -1;
     @apply absolute
 }
+
+@media (max-width: 1024px) {
+    .container {
+        position: unset;
+        display: block;
+        max-width: 100% !important;
+        min-width: 100% !important;
+        height: 100%;
+        transform: unset;
+    }
+}

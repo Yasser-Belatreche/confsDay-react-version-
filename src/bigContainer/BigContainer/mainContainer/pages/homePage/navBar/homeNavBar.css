@@ -26,3 +26,18 @@
         @apply px-2
     }
 }
+
+@media (max-width: 1024px) {
+    .home-link {
+        @apply px-4
+    }
+}
+
+@media (max-width: 800px) {
+    .home-link {
+        @apply px-2
+    }
+    .home-nav-links {
+        @apply justify-start
+    }
+}

@@ -13,17 +13,14 @@ const NavBar = () => {
       <p className="title">confsday</p>
 
       <ul className="navLinks">
-        <li className={`link ${current === 'home' ? 'current': '' }`} onClick={() => setCurrent('home')}>
-          <Link to='/'>Home</Link>
+        <li className={`link ${current === 'home' ? 'current': '' }`} >
+          <Link to='/' onClick={() => setCurrent('home')}>Home</Link>
         </li>
-        <li className={`link ${current === 'FAQ' ? 'current': '' }`}  onClick={() => setCurrent('FAQ')}>
-          <Link to='/FAQ'>FAQ</Link>
+        <li className={`link ${current === 'FAQ' ? 'current': '' }`}  >
+          <Link to='/FAQ' onClick={() => setCurrent('FAQ')}>FAQ</Link>
         </li>
-        <li className={`link ${current === 'lastEdition' ? 'current': '' }`}  onClick={() => setCurrent('lastEdition')}>
-          <Link to='/LastEdition'>Last Edition</Link>
-        </li>
-        <li className={`link ${current === 'registration' ? 'current': '' }`}  onClick={() => setCurrent('registration')}>
-          <Link to='/Registration'>Registration</Link>
+        <li className={`link ${current === 'lastEdition' ? 'current': '' }`} >
+          <Link to='/LastEdition' onClick={() => setCurrent('lastEdition')}>Last Edition</Link>
         </li>
       </ul>
 

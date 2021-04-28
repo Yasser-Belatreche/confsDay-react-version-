@@ -49,6 +49,40 @@
     }
 }
 
+@media (max-width:1024px) {
+    .single-topic {
+        @apply px-14
+    }
+}
+
+@media (max-width: 800px) {
+    .single-day {
+        width: 98%;
+    }
+    .single-topic {
+        @apply px-10
+    }
+    .topic-info .icon.location,
+    .topic-info .topic-time {
+        display: none;
+    }
+    .topic-details .topic-time {
+        display: block !important;
+    }
+}
+
+@media (max-width: 500px) {
+    .single-topic {
+        @apply px-4
+    }
+    .topic-header .topic-title p {
+        @apply mx-4
+    }
+    .single-day .date p {
+        font-size: 22px;
+    }
+}
+
 .agenda-items .topic-header {
     @apply w-full flex items-center justify-between py-10
 }
@@ -107,4 +141,14 @@
     font-weight: 500;
     font-size: 16px;
     @apply pl-20 mb-4
+}
+
+.topic-details .topic-time {
+    display: none;
+    font-size: 18px;
+    @apply my-5 font-semibold pl-7
+}
+
+.topic-details .topic-time span {
+    @apply font-normal
 }

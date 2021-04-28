@@ -3,7 +3,7 @@ import './homeNavBar.css';
 
 const HomeNavBar = () => {
   return (
-    <div className="navBar">
+    <div className="navBar" style={{overflowX: 'scroll'}}>
       <ul className="home-nav-links">
         <li className='home-link'>
           <a href="#hero">What's</a>

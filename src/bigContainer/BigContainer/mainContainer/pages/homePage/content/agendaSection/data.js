@@ -92,7 +92,7 @@ export const data = [
       {
         img: Conference2,
         title: 'Conference 02',
-        time: '9:30 AM- 11:30 AM',
+        time: '9:30 AM - 11:30 AM',
         details: [
           'We will talk about data infrastructures in Algeria, and answer all the questions related to it.'
         ]
@@ -100,7 +100,7 @@ export const data = [
       {
         img: panel3,
         title: 'Third Panel',
-        time: '11:30 AM- 1:00 PM',
+        time: '11:30 AM - 1:00 PM',
         details: [
           'A panel for companies and universities.',
           'We will highlight the importance of IS and data science specialties and see if Algerian university is aware of their importance.',
@@ -110,7 +110,7 @@ export const data = [
       {
         img: Billel,
         title: 'Closing Ceremony',
-        time: '1:00 PM- 1:30 PM',
+        time: '1:00 PM - 1:30 PM',
         details: [
           'A word from the club’s president.',
           'Thank the speakers, guests and organizers.'

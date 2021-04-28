@@ -20,7 +20,7 @@ export const data = [
   {
     index : 2,
     image : panel3,
-    title : 'Third Panel: IS and data science training in universities: Companies and university panel.',
+    title : 'Third Panel: IS and data science training in universities',
     desc : 'Is the Algerian university aware of the importance of these two specialties. Are we able to provide training that meets standards and the needs of companies?'
   },
   {
